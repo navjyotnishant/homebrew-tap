@@ -1,34 +1,34 @@
 class Dun < Formula
   desc "Local-only git trailer standard for AI-attribution provenance"
   homepage "https://github.com/navjyotnishant/whodunit"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.1.0/dun_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "3a3d143bb3e42ece2481437019948ea628d529d1f70ec3f077de348ffeb13939"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.2.0/dun_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "984b08c1cc8a0c00e04eeebe1f575af817152490db76e9a71097a7357f45c59c"
     else
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.1.0/dun_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "37e1786bc6b2a19d7a3421f1e1b0d67606d0e5777bc6b3ae9d9efb1e07ded0db"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.2.0/dun_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "298e8ccf640d1348975c5b46defca83e0f39968f576fcd5467c633e51b80ae98"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.1.0/dun_v0.1.0_linux_arm64.tar.gz"
-      sha256 "e79a8a6b18e47209bc5eb966e0d20b16ce25865b75769335406f975cefccec92"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.2.0/dun_v0.2.0_linux_arm64.tar.gz"
+      sha256 "33acc8df5e92b7e33d9a916d1282fec68b753107974d110dae141bc0e549d6dc"
     else
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.1.0/dun_v0.1.0_linux_amd64.tar.gz"
-      sha256 "82724ff2e52e8d074c90a5bf1521826ea53d130beeccd4c840a6f070b1eac1b3"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.2.0/dun_v0.2.0_linux_amd64.tar.gz"
+      sha256 "9cb17969d4b7956ae327b6d76f39805cb92b3faa16b5ce48bbffeb5986817789"
     end
   end
 
   def install
-    bin.install "dun_v0.1.0_darwin_arm64" => "dun" if OS.mac? && Hardware::CPU.arm?
-    bin.install "dun_v0.1.0_darwin_amd64" => "dun" if OS.mac? && Hardware::CPU.intel?
-    bin.install "dun_v0.1.0_linux_arm64" => "dun" if OS.linux? && Hardware::CPU.arm?
-    bin.install "dun_v0.1.0_linux_amd64" => "dun" if OS.linux? && Hardware::CPU.intel?
+    bin.install "dun_v0.2.0_darwin_arm64" => "dun" if OS.mac? && Hardware::CPU.arm?
+    bin.install "dun_v0.2.0_darwin_amd64" => "dun" if OS.mac? && Hardware::CPU.intel?
+    bin.install "dun_v0.2.0_linux_arm64" => "dun" if OS.linux? && Hardware::CPU.arm?
+    bin.install "dun_v0.2.0_linux_amd64" => "dun" if OS.linux? && Hardware::CPU.intel?
   end
 
   test do
