@@ -31,6 +31,24 @@ class Dun < Formula
     bin.install "dun_v0.2.0_linux_amd64" => "dun" if OS.linux? && Hardware::CPU.intel?
   end
 
+  # Named here because Homebrew has no post-install hook — a formula has
+  # install and test blocks and nothing that runs arbitrary code on
+  # upgrade, so an upgrade cannot fix a repository's hooks on its own
+  # (NAV-76, criterion 16).
+  #
+  # dun repairs a stale repository automatically on the next command run
+  # there, so this is the belt-and-braces path for someone who would
+  # rather fix all of them at once than wait to visit each.
+  def caveats
+    <<~EOS
+      Hooks installed in a repository before this upgrade may be out of date.
+      They are repaired automatically the next time you run dun there, or
+      bring every instrumented repository up to date at once:
+
+          dun repos update
+    EOS
+  end
+
   test do
     assert_match "dun", shell_output("#{bin}/dun --help")
   end
