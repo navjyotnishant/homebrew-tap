@@ -5,21 +5,21 @@ class Orion < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.5/orion_v0.8.5_darwin_arm64.tar.gz"
-      sha256 "bdaee52baa094fd24dc70f7cc88a7961ae28deb1473eb915179c95d8f158386b"
+      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.6/orion_v0.8.6_darwin_arm64.tar.gz"
+      sha256 "0e08ffad8dcfc163b20060bfcc563dd50e6d9e6384a93e3858b500e5e1507fda"
     else
-      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.5/orion_v0.8.5_darwin_amd64.tar.gz"
-      sha256 "6e62342665ab076d395cf658b7830b0b8781743a9ac8a5af458f9e6529878192"
+      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.6/orion_v0.8.6_darwin_amd64.tar.gz"
+      sha256 "c02c0d7a6ed10ed3f8a60277228a122abf158a0e8f40b575c1404e944d817bb1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.5/orion_v0.8.5_linux_arm64.tar.gz"
-      sha256 "c8caaa77ffa42347524b40f83bee5ac3a596fcbf5d486dab63b37fef4a26455d"
+      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.6/orion_v0.8.6_linux_arm64.tar.gz"
+      sha256 "a475f313353d47ee8fc1bee160edad198058473ae10e9e424e981bba4c636602"
     else
-      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.5/orion_v0.8.5_linux_amd64.tar.gz"
-      sha256 "7c523b74685a9a1dbd05d70bb9826bbb0940da039992fdc75e5ab873caa6e3ce"
+      url "https://github.com/NjAIAgents/orion-releases/releases/download/v0.8.6/orion_v0.8.6_linux_amd64.tar.gz"
+      sha256 "d0174761e2fbbb8b6a5ff922f412273cb905e5beef0a717c06d4704be0af4803"
     end
   end
 
