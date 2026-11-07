@@ -1,26 +1,26 @@
 class Dun < Formula
   desc "Local-only git trailer standard for AI-attribution provenance"
   homepage "https://github.com/navjyotnishant/whodunit"
-  version "0.8.0"
+  version "0.8.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.0/dun_v0.8.0_darwin_arm64.tar.gz"
-      sha256 "056ae5d704d92b91a67f74d33d3c5f46628388fdda9de196d4747a10d398a571"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.1/dun_v0.8.1_darwin_arm64.tar.gz"
+      sha256 "cb3857ad92e37da61ba74b861da1f0696b4ec62095a74ce5692c5b64ca49a227"
     else
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.0/dun_v0.8.0_darwin_amd64.tar.gz"
-      sha256 "b556a3b562bb84a6bd419956e00b4c720e52c6d1a9e2636638df082655f06020"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.1/dun_v0.8.1_darwin_amd64.tar.gz"
+      sha256 "09b240ae9258eaf0f43dae8916bd4acc2634daf0efcbac6923027080be03c0cb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.0/dun_v0.8.0_linux_arm64.tar.gz"
-      sha256 "11f952c27e01667113a174c022c685e6ce6604eebfb31b9e6e9bc47093f372dd"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.1/dun_v0.8.1_linux_arm64.tar.gz"
+      sha256 "832a7ee61afcb4f6479280c8b40c4d892918efa691b798d9962cf79c6b3c4ba5"
     else
-      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.0/dun_v0.8.0_linux_amd64.tar.gz"
-      sha256 "e97bb9dcbf683e2f193ee09d8facb3cdf708ee69d7bff9afdadb83fd1b138e30"
+      url "https://github.com/navjyotnishant/whodunit/releases/download/v0.8.1/dun_v0.8.1_linux_amd64.tar.gz"
+      sha256 "b3e21ef0b519659fb2ae819150e5d51baafd499704b3073337aa08eb98085488"
     end
   end
 
